@@ -1,0 +1,17 @@
+/* components/SearchInput.wxss */
+@import '../../styles/iconfont.wxss';
+.mall-search {
+    height: 90rpx;
+    color: #2c2c2c;
+    padding: 10rpx;
+    background-color:  #d81e06;
+}
+.mall-search navigator {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    border:  1rpx solid #515151;
+    background-color: #fff;
+}

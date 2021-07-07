@@ -1,0 +1,41 @@
+<!--pages/pays/pays.wxml-->
+<view class="address">
+    <view class="detail_ad">
+        <view class="info">
+           <view class="name">收件人：{{address.userName}}</view>
+           <view class="dizhi">
+            {{address.provinceName+address.cityName+address.countyName+address.detailInfo}}
+           </view> 
+        </view>
+        <view class="tel">{{address.telNumber}}</view>
+    </view>
+</view>
+<view class="cart_content">
+    <view class="cart_title">购物车</view>
+    <view class="cart_main" wx:for="{{cartLists}}" wx:key="add_time">
+        <view class="cart_item">
+            <navigator class="cart_img">
+                <image src="{{item.goods_small_logo}}" mode="widthFix"/>
+            </navigator>
+            <view class="cart_goods_info">
+                <view class="goods_name">{{item.goods_name}}</view>
+                <view class="goods_price_wrap">
+                    <view class="goods_price">￥ {{item.goods_price}} </view>
+                    <view class="cart_num">
+                        <view class="num">x{{item.num}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="total">
+    <view class="all_wrap">
+        合计： <text class="totalPrice">￥ {{totalPrice}}</text>
+        <view>包含运费</view>
+    </view>
+    <view class="pay">
+        支付({{totalNum}})
+    </view>
+</view>

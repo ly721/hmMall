@@ -1,0 +1,80 @@
+<!--pages/users/users.wxml-->
+
+<view class="user_info_wrap">
+    <view wx:if="{{userInfo.avatarUrl}}" class="user_img_wrap">
+        <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user_avatar_wrap">
+            <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user_name">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+    <view wx:else class="user_login">
+        <navigator url="/pages/logins/logins" open-type="navigate">
+            登录
+        </navigator>
+    </view>
+</view>
+<view class="user_content">
+    <view class="user_main">
+        <!-- 历史足迹   -->
+        <view class="histoty_wrap">
+            <navigator url="" open-type="navigate">
+                <view class="his_num">0</view>
+                <view class="his_name">收藏的店铺</view>
+            </navigator>
+            <navigator url="" open-type="navigate">
+                <view class="his_num">0</view>
+                <view class="his_name">收藏的商品</view>
+            </navigator>
+            <navigator url="" open-type="navigate">
+                <view class="his_num">0</view>
+                <view class="his_name">关注的商品</view>
+            </navigator>
+            <navigator url="" open-type="navigate">
+                <view class="his_num">0</view>
+                <view class="his_name">我的足迹</view>
+            </navigator> 
+        </view>
+        <!-- 我的订单 -->
+        <view class="order_wrap">
+            <view class="order_title">我的订单</view>
+            <view class="order_content">
+                <navigator>
+                    <view class="iconfont icon-dingdan"></view>
+                    <view class="order_name">我的订单</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-web-icon-"></view>
+                    <view class="order_name">待付款</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-receipt-address"></view>
+                    <view class="order_name">待收货</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-tuikuan"></view>
+                    <view class="order_name">退款/退货</view>
+                </navigator> 
+            </view>
+        </view>
+        <view class="ad_wrap">
+            收获地址管理
+        </view>
+        <view class="app_info_wrap">
+            <view class="app_info_item">
+                <text>联系客服</text>
+                <text>400-223-0566</text>
+            </view>
+            <view class="app_info_item">
+                <text>意见反馈</text>
+            </view>
+            <view class="app_info_item">
+                <text>关于我们</text>
+            </view>
+        </view>
+        <view class="app_share">
+            <text>把应用推荐给别人</text>
+        </view>
+    </view>
+</view>
+  

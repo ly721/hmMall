@@ -1,0 +1,7 @@
+<!--components/SearchInput.wxml-->
+<view class="mall-search">
+    <navigator  url="pages/searchs/searchs"  open-type="navigate">
+        <text class="iconfont icon-sousuo"></text> 搜索
+    </navigator>
+</view>
+  

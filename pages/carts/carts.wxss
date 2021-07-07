@@ -1,0 +1,129 @@
+/* pages/carts/carts.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+.ad_btn{
+    padding: 20rpx;
+}
+.detail_ad{
+    padding: 20rpx;
+    display: flex;
+    font-size: 24rpx;
+}
+.info{
+   flex:5;
+}
+
+.tel{
+    flex: 3;
+    text-align: right;
+}
+.cart_title{
+    border-bottom: 1rpx solid #d81e06;
+    border-top: 1rpx solid #d81e06;
+    font-size: 36rpx;
+    padding: 20rpx;
+}
+.cart_item {
+    display: flex;
+    padding: 10rpx;
+}
+.cart_check{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_check checkbox{
+    color: #fff;
+    
+}
+.cart_img{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_img image{
+    width: 80%;
+}
+.cart_goods_info {
+  flex: 4;
+  padding-left: 20rpx;
+}
+.cart_goods_info .goods_name{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.goods_price_wrap {
+    padding-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.goods_price_wrap .goods_price {
+    color: var(--themeColor);
+    font-size: 30rpx;
+}
+.cart_num{
+    display: flex;
+}
+.num_edit{
+    border: 1rpx solid #ccc;
+    width: 40rpx;
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num{
+    width: 50rpx;
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noGoods {
+    text-align: center;
+    font-size: 32rpx;
+}
+.total {
+    height: 90rpx;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    border-top: 1rpx solid #666;
+}
+.total .check_wrap_all{
+    flex: 2;
+    font-size: 24rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total .all_wrap{
+    flex: 4;
+    text-align: right;
+    padding-right: 20rpx;
+}
+.all_wrap view{
+    font-size: 22rpx;
+}
+.totalPrice{
+    color: var(--themeColor);
+    font-weight: 600;
+}
+.total .pay{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 32rpx;
+    background-color: #d81e06;
+    color: #fff;
+    border: 1rpx solid #d81e06;
+}

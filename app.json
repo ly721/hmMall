@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/users/users",
+    "pages/logins/logins",
+    "pages/carts/carts",
+    "pages/indexs/indexs",
+    "pages/categorys/categorys",
+    "pages/goods_details/goods_details",
+    "pages/goods_lists/goods_lists",
+    "pages/collect/collect",
+    "pages/orders/orders",
+    "pages/searchs/searchs",
+    "pages/feedbacks/feedbacks",
+    "pages/auths/auths",
+    "pages/pays/pays"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "黑马商城",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/indexs/indexs",
+        "text": "主页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-ac.png"
+      },
+      {
+        "pagePath": "pages/categorys/categorys",
+        "text": "分类",
+        "iconPath": "icons/cate.png",
+        "selectedIconPath": "icons/cate-ac.png"
+      },
+      {
+        "pagePath": "pages/carts/carts",
+        "text": "购物车",
+        "iconPath": "icons/cart.png",
+        "selectedIconPath": "icons/cart-ac.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "我的",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user-ac.png"
+      }
+    ]
+  },
+  
+    
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
